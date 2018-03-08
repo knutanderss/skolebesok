@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Godkjente søknader</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Godkjente søknader</h1>
+      <p class="lead">Grønt betyr godkjent, rødt betyr at noe er galt</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="input-group">
+      <div class="input-group-prepend">
+      </div>
+      <textarea class="form-control" rows="10" aria-label="With textarea" id="applications"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit" onclick="validate();">Validér</button>
+    <br>
+    <br>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Navn</th>
+          <th scope="col">Født</th>
+          <th scope="col">Startet Studiet</th>
+          <th scope="col">Endt Studiet</th>
+          <th scope="col">Startet Jobb</th>
+          <th scope="col">Endt Jobb</th>
+        </tr>
+      </thead>
+      <tbody id="table-rows">
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
